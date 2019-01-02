@@ -1,0 +1,61 @@
+{
+  "auth_profiles" : [
+    {
+      "id" : "analytics.yale",
+      "client_secrets_path" : "config/client_secrets/analytics.yale.json",
+      "token_path" : "config/tokens/analytics.yale.dat"
+    },
+    {
+      "id" : "yale.metrics",
+      "client_secrets_path" : "config/client_secrets/yale.metrics.json",
+      "token_path" : "config/tokens/yale.metrics.dat"
+    }
+  ],
+  "report_profiles" : [
+    {
+      "name" : "User",
+      "dimensions" : "ga:date,ga:userType,ga:sessionCount",
+      "metrics" : "ga:users,ga:newUsers,ga:percentNewSessions,ga:sessionsPerUser"
+    },
+    {
+      "name" : "Session",
+      "dimensions" : "ga:date,ga:sessionDurationBucket",
+      "metrics" : "ga:sessions,ga:bounces,ga:bounceRate,ga:sessionDuration,ga:avgSessionDuration,ga:hits"
+    },
+    {
+      "name" : "Traffic Sources",
+      "dimensions" : "ga:date,ga:referralPath,ga:fullReferrer,ga:source,ga:medium,ga:keyword,ga:sourceMedium",
+      "metrics" : "ga:organicSearches"
+    },
+    {
+      "name" : "Platform or Device",
+      "dimensions" : "ga:date,ga:operatingSystem,ga:mobileDeviceBranding,ga:mobileDeviceModel,ga:dataSource,ga:browser,ga:deviceCategory",
+      "metrics" : "ga:sessions"
+    },
+    {
+      "name" : "Geo Network",
+      "dimensions" : "ga:date,ga:continent,ga:country,ga:region,ga:city,ga:latitude,ga:longitude",
+      "metrics" : "ga:sessions"
+    },
+    {
+      "name" : "Page Tracking",
+      "dimensions" : "ga:date,ga:pageTitle,ga:pagePath,ga:landingPagePath,ga:secondPagePath,ga:exitPagePath",
+      "metrics" : "ga:pageviews,ga:uniquePageviews,ga:timeOnPage,ga:avgTimeOnPage,ga:exits,ga:exitRate,ga:entrances"
+    },
+    {
+      "name" : "Internal Search",
+      "dimensions" : "ga:date,ga:searchUsed,ga:searchKeyword,ga:searchStartPage,ga:searchDestinationPage",
+      "metrics" : "ga:sessions"
+    },
+    {
+      "name" : "App Tracking",
+      "dimensions" : "ga:date,ga:landingScreenName,ga:exitScreenName",
+      "metrics" : "ga:screenviews,ga:uniqueScreenviews,ga:timeOnScreen"
+    },
+    {
+      "name" : "Performance",
+      "dimensions" : "ga:date",
+      "metrics" : "ga:pageLoadTime,ga:avgPageLoadTime,ga:pageDownloadTime,ga:serverResponseTime,ga:avgServerResponseTime"
+    }
+  ]
+}

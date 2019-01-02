@@ -1,0 +1,7 @@
+.DS_Store
+*~
+*.pyc
+/config/client_secrets/*.json
+/config/tokens
+/output
+/log
